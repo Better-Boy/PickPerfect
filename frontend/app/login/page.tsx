@@ -62,8 +62,17 @@ export default function LoginPage() {
     })
     
     if (result.success) {
-      // Redirect to home page after successful registration
-      router.push("/")
+      // Switch to sign-in tab after successful registration
+      setActiveTab("login")
+      // Clear the form
+      setName("")
+      setEmail("")
+      setPassword("")
+      setGeoCoordinates(null)
+      setLocationDetected(false)
+      setDetectedLocation("")
+      // Show success message
+      setError("")
     } else {
       setError(result.error || "Registration failed. Please try again.")
     }
