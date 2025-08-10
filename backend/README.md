@@ -1,4 +1,3 @@
-# ==== README.md ====
 # PickPerfect with RedisAI
 
 A modern FastAPI-based e-commerce backend with vector search capabilities, user authentication, and personalized recommendations.
